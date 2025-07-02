@@ -12,7 +12,7 @@ export async function getAIResponse(prompt: string, model: Model): Promise<{
   try {
     const harmDetection = await detectHarmfulPrompt({ prompt });
 
-    const modelName = model === 'gemini-flash' ? 'googleai/gemini-2.0-flash' : 'googleai/gemma-7b';
+    const modelName = model === 'gemini-flash' ? 'googleai/gemini-2.0-flash' : 'googleai/gemma-7b-it';
 
     const llmResponse = await ai.generate({
       model: modelName,

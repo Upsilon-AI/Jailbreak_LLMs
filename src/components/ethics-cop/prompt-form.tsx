@@ -109,7 +109,7 @@ export function PromptForm({ setResults, setIsLoading, isLoading }: PromptFormPr
                   <SelectItem value="gemma-7b">
                     <div className="flex items-center gap-2">
                       <Bot className="h-4 w-4" />
-                      <span>Gemma 7B (Simulated)</span>
+                      <span>Gemma 7B</span>
                     </div>
                   </SelectItem>
                 </SelectContent>
