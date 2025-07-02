@@ -2,7 +2,6 @@
 
 A simplified implementation of adversarial attacks on safety-aligned Large Language Models (LLMs), inspired by the ICLR 2025 paper:  
 **"Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks"**  
-by *Maksym Andriushchenko, Francesco Croce, and Nicolas Flammarion*.
 
 > ⚠️ **This project is strictly for educational and research purposes.** It demonstrates how LLMs can be evaluated for safety vulnerabilities without generating harmful content.
 
