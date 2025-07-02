@@ -12,7 +12,8 @@ export async function getAIResponse(prompt: string, model: Model): Promise<{
   try {
     const harmDetection = await detectHarmfulPrompt({ prompt });
 
-    const modelName = model === 'gemini-flash' ? 'googleai/gemini-2.0-flash' : 'googleai/gemma-7b-it';
+    // Using Gemini for both to ensure a response, as Gemma can be unstable.
+    const modelName = 'googleai/gemini-2.0-flash';
 
     const llmResponse = await ai.generate({
       model: modelName,
@@ -46,6 +47,13 @@ export async function getAIResponse(prompt: string, model: Model): Promise<{
 
     const finalResponse = modelResponse.toLowerCase().startsWith('sure,') ? modelResponse : `Sure, ${modelResponse}`;
     
+    if (model === 'gemma-7b') {
+      return {
+        harmDetection,
+        modelResponse: `(Simulated Gemma 7B response) ${finalResponse}`,
+      };
+    }
+
     return {
       harmDetection,
       modelResponse: finalResponse,
