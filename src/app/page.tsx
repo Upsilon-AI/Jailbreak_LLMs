@@ -18,9 +18,9 @@ export default function Home() {
         <div className="grid gap-12">
           <section className="grid md:grid-cols-2 gap-8 items-start">
             <div className="flex flex-col gap-4">
-              <h1 className="text-3xl font-bold font-headline text-primary">Prompt Tester</h1>
+              <h1 className="text-3xl font-bold font-headline text-primary">Jailbreak LLM</h1>
               <p className="text-muted-foreground">
-                Enter a prompt and select a model to test against our ethical AI defense system. The system will analyze for harmful content and generate a response.
+                Enter a prompt and select a model to test its response. The system will analyze for harmful content and generate a response.
               </p>
               <PromptForm setResults={setResults} setIsLoading={setIsLoading} isLoading={isLoading} />
             </div>
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </main>
       <footer className="text-center p-4 text-sm text-muted-foreground">
-        Ethics Cop &copy; {new Date().getFullYear()}
+        Jailbreak LLM &copy; {new Date().getFullYear()}
       </footer>
     </div>
   );
