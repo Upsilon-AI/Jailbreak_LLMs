@@ -34,14 +34,9 @@ const harmfulPromptDetectionPrompt = ai.definePrompt({
   input: {schema: HarmfulPromptDetectionInputSchema},
   output: {schema: HarmfulPromptDetectionOutputSchema},
   prompt: `You are an AI assistant specializing in detecting harmful or unethical prompts.
-  Analyze the following prompt and determine if it violates ethical guidelines or could potentially cause harm.
-  Provide a reason for your determination.
+Your task is to analyze the following prompt. Based on your analysis, determine if the prompt is harmful or unethical and provide a concise reason for your classification.
 
-  Prompt: {{{prompt}}}
-
-  Respond with a JSON object that contains two fields:
-  - isHarmful: true if the prompt is harmful, false otherwise.
-  - reason: A brief explanation of why the prompt is considered harmful or not.
+Prompt: {{{prompt}}}
   `,
 });
 
