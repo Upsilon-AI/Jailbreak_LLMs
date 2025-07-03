@@ -52,7 +52,6 @@ export async function getAIResponse(prompt: string, model: Model): Promise<{
         modelResponse: `(Simulated Gemma 7B response) ${finalResponse}`,
       };
     }
-
     return {
       harmDetection,
       modelResponse: finalResponse,
