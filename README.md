@@ -1,4 +1,4 @@
-# Jailbreaking LLM Simulation
+# Jailbreaking LLM Simulation 
 ![WhatsApp Image 2025-07-02 at 22 24 44_a7fc3fa9](https://github.com/user-attachments/assets/313f03c4-8b0f-4bb5-9f94-6bf1cd6ffb44)
 A simplified implementation of adversarial attacks on safety-aligned Large Language Models (LLMs), inspired by the ICLR 2025 paper:  
 **"Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks"**  
@@ -7,7 +7,7 @@ A simplified implementation of adversarial attacks on safety-aligned Large Langu
 
 ---
 
-## 🧠 Overview
+## Overview
 
 This project tests the vulnerabilities of safety-aligned LLMs using:
 
