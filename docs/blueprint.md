@@ -16,3 +16,4 @@
 - Body and headline font: 'Inter', sans-serif, for clean and accessible reading on a technical user interface.
 - Use simple, clear icons to represent different types of flagged content and security levels.
 - Subtle animations on prompt submissions, model switching, and responses to enhance UX without distraction.
+- 
